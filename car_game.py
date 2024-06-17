@@ -6,7 +6,6 @@ started = False
 pygame.init()
 pygame.mixer.init()
 
-bye_sfx = pygame.mixer.Sound('Car_game/bye.wav')
 start_sfx = pygame.mixer.Sound('Car_game/car_start.mp3')
 engine_sfx = pygame.mixer.Sound('Car_game/car_rev.mp3')
 car_stop_sfx = pygame.mixer.Sound('Car_game/car_stop.wav')
@@ -44,7 +43,6 @@ while True:
         engine_sfx.stop()
         car_stop_sfx.stop()
         engine_sfx.stop()
-        bye_sfx.play()
         break
     
     else :
@@ -52,4 +50,5 @@ while True:
 
 pygame.mixer.quit()
 pygame.quit()
+
 
